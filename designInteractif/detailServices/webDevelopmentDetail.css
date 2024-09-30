@@ -1,0 +1,7 @@
+
+.wdd-section i{
+    font-size: 7rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Steven Marco</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="#home" class="logo">Steven <span>Marco</span></a>
+            <div class="language-switcher">
+                <select id="language-dropdown">
+                    <option value="en" data-i18n="english">English</option>
+                    <option value="fr" data-i18n="french">French</option>
+                </select>
+            </div>
+
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active" data-i18n="home">Home</a>
+                <a href="#services" data-i18n="services">Services</a>
+                <a href="#skills" data-i18n="skills">Skills</a>
+                <a href="#projects" data-i18n="projects">Projects</a>
+                <a href="#education" data-i18n="education">Education</a>
+                <a href="#contact" data-i18n="contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1 data-i18n="hiName">Hi, It's <span data-i18n="Steven">Steven</span></h1>
+                <h3 class="text-animation">
+                    I'm a <span id="dynamic-text"></span>
+                </h3>                
+                <p data-i18n="homeDescription">
+                    Serious and diligent, my studies and experience have enabled me to broaden my skills, 
+                    to be versatile in what I do, and to see things from different angles. 
+                    Responsible and organized, I'm now looking to develop myself and put my knowledge to good use, 
+                    my motivation, my skills and further enhance my professional background. 
+                </p>
+                <p>
+                    <b class="home-bolt" data-i18n="lookingFor">Looking for a work-study position:</b> 
+                    <span data-i18n="startDate" class="homeDescription">Starting January 2025</span>
+                </p>
+                
+                <p>
+                    <b class="home-bolt" data-i18n="apprenticeshipContract">Apprenticeship contract:</b> 
+                    <span data-i18n="workHours" class="homeDescription">3D / week</span>
+                </p>
+                <br> 
+
+                <a href="#contact" class="btn" data-i18n="hireMe">Hire Me
+                    <i class="fa-solid fa-briefcase"></i>
+                </a>
+                <button class="btn" id="switchButton" data-i18n="lightMode">Light Mode</button>
+
+            </div>
+            <div class="home-img">
+                <img src="assets/profil.jpg" alt="">
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="heading" data-i18n="servicesHeading">Services</h2>
+            <div class="service-container">
+                <div class="services-box">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3 data-i18n="webDevelopment">Web Development</h3>
+                    <p data-i18n="webDevelopmentDescription">
+                        I specialize in creating responsive and user-friendly websites using modern frameworks and technologies. 
+                        My goal is to provide seamless user experiences and ensure optimal performance across all devices.
+                    </p>
+                    <a href="./detailServices/webDevelopmentDetail.html" class="btn" data-i18n="learnMore">Learn More</a>
+                </div>
+        
+                <div class="services-box">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3 data-i18n="algorithmDevelopment">Algorithm Development</h3>
+                    <p data-i18n="algorithmDevelopmentDescription">
+                        I develop efficient algorithms that solve complex problems in various domains, including data analysis 
+                        and machine learning. My focus is on optimizing performance while ensuring accuracy and reliability.
+                    </p>
+                    <a href="#" class="btn" data-i18n="learnMore">Learn More</a>
+                </div>
+        
+                <div class="services-box">
+                    <i class="fa-solid fa-server"></i>
+                    <h3 data-i18n="webDesign">Web Design</h3>
+                    <p data-i18n="webDesignDescription">
+                        My web design services emphasize aesthetics and functionality, creating visually appealing interfaces 
+                        that enhance user engagement. I follow the latest design trends to deliver unique and effective designs.
+                    </p>
+                    <a href="#" class="btn" data-i18n="learnMore">Learn More</a>
+                </div>
+            </div>
+        </section>              
+
+        <section class="skills" id="skills">
+            <h2 class="heading" data-i18n="skills">Skills</h2>
+
+            <div class="skills-container">
+                <div class="skills-box-container language-icon">
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/html-1.svg" alt="html icon">
+                        <span class="skill-name">HTML</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/css-3.svg" alt="css icon">
+                        <span class="skill-name">CSS</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/javascript-1.svg" alt="javascript icon">
+                        <span class="skill-name">Javascript</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/jquery-4.svg" alt="jquery icon">
+                        <span class="skill-name">Jquery</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/react-2.svg" alt="react icon">
+                        <span class="skill-name">React</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/c--4.svg" alt="c# icon">
+                        <span class="skill-name">C#</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/symfony.svg" alt="symphony icon">
+                        <span class="skill-name">Symphony</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/laravel-2.svg" alt="laravel icon">
+                        <span class="skill-name">Laravel</span>
+                    </div>
+
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/nodejs-3.svg" alt="nodejs icon">
+                        <span class="skill-name">NodeJS</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/microsoft-sql-server-1.svg" alt="sql icon">
+                        <span class="skill-name">SQL</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/mongodb-icon-2.svg" alt="mongodb icon">
+                        <span class="skill-name">MongoDB</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/wordpress-icon-1.svg" alt="wordpress icon">
+                        <span class="skill-name">wordPress</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/azure-2.svg" alt="azure icon">
+                        <span class="skill-name">Azure</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/github-icon-2.svg" alt="github icon">
+                        <span class="skill-name">Github</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/languageIcons/trello.svg" alt="trello icon">
+                        <span class="skill-name">Trello</span>
+                    </div>
+                </div>
+                <div class="skills-box-container outils-icon">
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/equipeIcons/microsoft-teams-1.svg" alt="teams icon">
+                        <span class="skill-name">Teams</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/equipeIcons/slack-new-logo.svg" alt="slack icon">
+                        <span class="skill-name">Slack</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/equipeIcons/discord-11.svg" alt="discord icon">
+                        <span class="skill-name">Discord</span>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skills-img" src="assets/equipeIcons/linear.svg" alt="linear icon">
+                        <span class="skill-name">Linear</span>
+                    </div>
+                    <div class="skills-box">
+                        <!-- <img class="skills-img" src="assets/equipeIcons/" alt=" icon"> -->
+                        <!-- <span class="skill-name"></span> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="heading" data-i18n="projectsHeading">Projects</h2>
+            <div class="projects-container">
+                <div class="projects-box">
+                    <img src="assets/projects/project01.webp" alt="">
+                    <div class="projects-info">
+                        <a href="https://github.com/StevenMarco/Spotify" target="_blank" rel="noopener noreferrer">
+                            <h4 data-i18n="spotifyTitle">Spotify</h4>
+                            <p data-i18n="spotifyDescription">
+                                This project was carried out as part of my training, and the challenge was to recreate the application in 2 days.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="projects-box">
+                    <img src="assets/projects/DiplomAdvisor.jpeg" alt="DiplomAdvisor picture">
+                    <div class="projects-info">
+                        <a href="https://www.diplomadvisor.com/" target="_blank" rel="noopener noreferrer">
+                            <h4 data-i18n="diplomAdvisorTitle">DiplomAdvisor</h4>
+                            <p data-i18n="diplomAdvisorDescription">
+                                DiplomAdvisor is a platform that enables students to find work-study programs and training courses that match their needs.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="projects-box">
+                    <img src="assets/projects/project03.jpg" alt="">
+                    <div class="projects-info">
+                        <a href="https://github.com/StevenMarco/My_Snapchat" target="_blank" rel="noopener noreferrer">
+                            <h4 data-i18n="snapchatTitle">SnapChat</h4>
+                            <p data-i18n="snapchatDescription">
+                                The aim was to learn how to create a mobile application and manage data in real time.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>            
+
+        <section class="timeline-section" id="education">
+            <h2 class="heading" data-i18n="educationHeading">Education</h2>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-i18n="educationDate1">2024-2027</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="mscTitle">MSC Architect in Information Systems</h3>
+                        <p data-i18n="mscDescription">
+                            Epitech Title RNCP 35544 / Level 7
+                            Understanding and mastering development tools and programming languages
+                            Specialization: Big Data, Cybersecurity, AI, Cloud
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-i18n="educationDate2">2024</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="freelanceTitle">Freelance Web Developer</h3>
+                        <p data-i18n="freelanceDescription">
+                            Software development, DevOps, Data analysis, Algorithms
+                            GA4 / Azure
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-i18n="educationDate3">2022-2023</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="internTitle">Full Stack Web Developer Intern</h3>
+                        <p data-i18n="internDescription">
+                            Software development
+                            React, PrimReact, C#
+                            Database Management: SQL Server
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-i18n="educationDate4">2022-2023</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="integratorTitle">Web Developer Integrator Title</h3>
+                        <p data-i18n="integratorDescription">
+                            Web@cademy By Epitech RNCP Level 5
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-i18n="educationDate5">2021</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="chuTitle">Nice University Hospital</h3>
+                        <p data-i18n="chuDescription">
+                            AGSU2 (Training in emergency gestures & care) Level 2
+                            State Diploma of Paramedic
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section class="contact" id="contact">
+            <h2 class="heading" data-i18n="contactHeading">Contact <span data-i18n="me">Me</span></h2>
+            <form id="contact-form">
+                <div class="input-box">
+                    <input type="text" placeholder="name" name="user_name" id="from_name" required data-i18n="enterYourName">
+                    <input type="email" placeholder="email" name="user_email" id="from_email" required data-i18n="enterYourEmail">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="phone" name="user_phone" id="from_phone" required data-i18n="enterYourPhone">
+                    <input type="text" placeholder="subject" name="subject" required data-i18n="enterYourSubject">
+                </div>
+                <textarea placeholder="" name="message" id="message" cols="30" rows="10" required data-i18n="enterYourMessage"></textarea>
+                <button onclick="sendEmail(event)" class="btn" data-i18n="sendMessage">Send Message</button>
+            </form>
+        </section>
+        
+        <footer class="footer">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="#" data-i18n="faq">FAQ</a>
+                </li>
+                <li>
+                    <a href="#" data-i18n="services">Services</a>
+                </li>
+                <li>
+                    <a href="#" data-i18n="aboutMe">About Me</a>
+                </li>
+                <li>
+                    <a href="#" data-i18n="contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#" data-i18n="privacyPolicy">Privacy Policy</a>
+                </li>
+            </ul>
+            <p class="copyright" data-i18n="copyright">&copy; 2024 Steven Marco</p>
+        </footer>        
+        <script src="script.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <!-- Initialiser EmailJS avec ton User ID -->
+        <script type="text/javascript">
+          (function() {
+            emailjs.init('DywRz0AmtamAlvsZl');  // Assurez-vous d'initialiser correctement
+          })();
+        </script>
+    </body>
+</html>
